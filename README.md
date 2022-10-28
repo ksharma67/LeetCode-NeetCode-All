@@ -1,3 +1,3 @@
-# LeetCode-NeetCode-150
+# LeetCode-NeetCode-All
 
-Leetcode NeetCode 150 problems solved in Python for interview prep.
+Leetcode NeetCode All problems solved in Python for interview prep.
