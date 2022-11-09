@@ -3,13 +3,7 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        i = 0
-        j = len(s) - 1
-        def recurseFunction(s, i, j) -> None:
-            if i==j or i > j:
-                return
-            temp = s[i]
-            s[i] = s[j]
-            s[j] = temp
-            recurseFunction(s, i + 1, j - 1)
-        recurseFunction(s, i, j)
+        left, right = 0, len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left, right = left + 1, right - 1
